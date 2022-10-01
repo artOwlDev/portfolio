@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono&family=Ubuntu&display=swap');
+
+
+.name{
+    display: flex;
+    width: 70%;
+    margin: 10rem auto;
+    align-items: center;
+    justify-content: space-between;
+    animation: aboutAnims 3s;
+
+    .text{
+        width: 60%;
+        margin-left: 2rem;
+
+        .text-comp{
+            
+            h1{
+                height: 5vh;
+            }
+
+            p{
+                height: 5vh;
+                color: #c4a58d;
+                font-size: 1rem;
+                font-family: Poppins;
+                margin: 6rem auto;
+                visibility: hidden;
+                animation-name: textAnims;
+                animation-delay: 3.6s;
+                animation-duration: 1s;
+                animation-fill-mode: forwards;
+            }
+
+        
+        }
+        
+        
+
+
+    }
+
+}
+
+@keyframes aboutAnims{
+    0%{
+        filter: opacity(0);
+    }
+    100%{
+        filter: opacity(1);
+    }
+}
+
+@keyframes textAnims{
+    0%{
+        filter: opacity(0);
+        transform: translateY(100px);
+    }
+
+    100%{
+        filter: opacity(1);
+        transform: translateY(0);
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .name{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 4rem auto;
+
+
+        .text{
+            width: 100%;
+
+            .text-comp{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                button{
+
+                }
+            
+                h1{
+                    text-align: center;
+                    margin: 2rem 0;
+                }
+    
+                p{
+                    text-align: center;
+                    margin: 14rem 0;
+                }
+    
+            }
+        }
+    }
+}

@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono&family=Ubuntu&display=swap');
+
+.navbar{
+    display: flex;
+    align-items: center;
+    color: whitesmoke;
+    margin: 2rem 4rem;
+    justify-content: space-between;
+    visibility: hidden;
+    animation-name: loadAnims;
+    animation-delay: 3.5s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+    
+
+
+    .left{
+        margin-left: 3rem;
+        font-family: 'Poppins', sans-serif;
+        
+        a{
+            color: inherit;
+            text-decoration: inherit;
+        }
+
+
+    }
+
+    .right{
+        font-family: 'Ubuntu', sans-serif;
+
+
+        .links{
+            margin-right: 2rem;
+            font-size: 0.9rem;
+    
+            span{
+                margin: 2rem;
+                cursor: pointer;
+                transition: all 0.5s ease;
+
+                &:hover{
+                    color: #ebd4c2;
+                }
+            }
+                    
+        }
+
+        button{
+            outline: none;
+            padding: 0.8rem;
+            margin-left: 0.4rem;
+            background-color: transparent;
+            color: white;
+            border: 1px solid #cbc0b8;
+            border-radius: 0.5rem;
+            cursor: pointer;
+
+            &:hover{
+                filter: brightness(125%);
+                border: 1px solid #cbc0b8;
+                color: #cbc0b8;
+            }
+        }
+    }
+
+}
+
+
+
+@keyframes loadAnims{
+    0%{
+        transform: translateY(-100px);
+    }
+
+    100%{
+        transform: translateY(0);
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .navbar{
+        display: flex;
+        align-items: center;
+        color: whitesmoke;
+        margin: 2rem 4rem;
+        flex-direction: column;
+        animation: none;
+        visibility: visible;
+
+        .left{
+            margin: 2rem;
+        }
+
+        .right{
+            .links{
+                margin: 1rem;
+
+                span{
+                    margin: 3rem;
+                }
+            }
+        }
+    }
+}

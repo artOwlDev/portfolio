@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:wght@600;800&family=Roboto+Mono&family=Ubuntu&display=swap');
+
+.about-me{
+    width: 60%;
+    margin: 24rem auto;
+    
+    .about-header{
+        display: flex;
+        margin: 4rem 0;
+        h1{
+            font-family: 'Raleway', sans-serif; 
+            font-weight: bolder;           
+            color: #ebd4c2;
+        }
+
+        .hl{
+            margin-left: 2rem;
+            height: 1.6rem;
+            width: 20rem;
+            border-bottom: 0.5px solid rgba(255, 255, 255, 0.459);
+        }
+
+    }
+
+    .details{
+        display: flex;
+        justify-content: center;
+
+        .text-div{
+            width: 60%;
+
+            p{
+                color: whitesmoke;
+                font-size: 1rem;
+                font-family: Poppins;
+                margin: 0rem 0.5rem;
+                padding-bottom: 2rem;
+            }
+
+            span{
+                color: #26b7f1;
+                font-weight: bold;
+            }
+
+            button{
+                margin: 1rem;
+                cursor: pointer;
+                padding: 1.4rem;
+                background: transparent;
+                font-family: 'Poppins', sans-serif;
+                border: 1px solid white;
+                color: white;
+                text-align: center;
+                width: 12rem;
+                font-size: .9rem;
+                border-radius: 1rem;
+                transition: all 0.5s ease;
+                
+                &:hover{
+                    filter: brightness(115%);
+                    border: 1px solid #26b7f1;
+                    color: #26b7f1;
+                }
+            }
+        }
+
+        .img-div{
+            width: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img{
+                object-fit: cover;
+                height: 16rem;
+                border-radius:3rem;
+                filter: grayscale(70%);
+                transition: all 0.5s ease;
+                margin-bottom: 6rem;
+                margin-left: 4rem;
+                -webkit-box-shadow: 0px 0px 15px 5px #000000; 
+                box-shadow: 0px 0px 15px 5px #000000;
+
+                &:hover{
+                    filter: grayscale(0);
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 800px){
+    .about-me{
+
+        .about-header{
+            h1{
+                text-decoration: underline;
+            }
+
+            .hl{
+                display: none;
+            }
+        }
+        .details{
+            flex-direction: column;
+
+            .text-div{
+                width: 100%;
+            }
+
+            .img-div{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+
+                img{
+                    margin: 4rem;
+                    height: 18rem;
+                    border-radius: 2rem;
+                    filter: grayscale(0);
+                }
+            }
+        }
+    }
+}
