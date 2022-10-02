@@ -22,7 +22,6 @@ const Navbar = () => {
                 <div className="links">
                     <span onClick={() => scrollUp(850)} className="about">About</span>
                     <span onClick={() => scrollUp(1800)} className="projects-nav">Projects</span>
-                    <span className="link-more">More</span>
                 </div>
             </div>
             

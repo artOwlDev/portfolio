@@ -1,7 +1,7 @@
 
 import React from 'react'
 import './aboutme.scss'
-import img1 from '../img/test1.jpeg'
+import img1 from '../img/portfolioimg.jpeg'
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
