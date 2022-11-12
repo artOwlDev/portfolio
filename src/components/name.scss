@@ -32,6 +32,22 @@
                 animation-fill-mode: forwards;
             }
 
+            .arrow{
+            
+                .icon{
+                    animation: arrowAnimation 1s alternate infinite;
+
+                    position: absolute;
+                    top: 90%;
+                    left: 50%;
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    font-size: 3rem;
+                }
+            }
+
+
         
         }
         
@@ -62,6 +78,10 @@
         transform: translateY(0);
         visibility: visible;
     }
+}
+
+@keyframes arrowAnimation{
+    from {transform: translateY(-30px);}
 }
 
 @media screen and (max-width: 800px){

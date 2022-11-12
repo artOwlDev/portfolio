@@ -3,6 +3,8 @@ import React from 'react'
 import "./projects.scss"
 import foodie from '../img/foodie.JPG'
 import whisper from '../img/whisper.JPG'
+import pixelton from '../img/pixelton.JPG'
+import staysafe from "../img/staysafe.JPG"
 import { Add, GitHub, Launch } from '@mui/icons-material'
 import { Link } from 'react-router-dom'
 import Aos from 'aos';
@@ -28,9 +30,25 @@ const Projects = () => {
                 <div className="hl"></div>
             </div>
 
+            
+
             <div className="project-div">
+
                 <div className="project">
-                    <h1 className='project-title'><span>01. </span>Fooodie</h1>
+                    <h1 className='project-title'><span>01. </span>StaySafe</h1>
+                    <img src={staysafe} alt="" />
+                    <div className="info">
+                        <p>A website made for safety! Track nearby wildfires, active volcanoes, tropical storms etc. </p>
+                        <p>React - Google Maps API - NASA API</p>
+                        <div className="icons-div">
+                            <a href="https://github.com/artOwlDev/StaySafe" target="_blank"><GitHub className='icon'/></a>
+                            <a href="http://www.stay-safe.live" target='_blank'><Launch className='icon'/></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="project">
+                    <h1 className='project-title'><span>02. </span>Fooodie</h1>
                     <img src={foodie} alt="" />
                     <div className="info">
                         <p>Fooodie is a website that lets users view the recipes to their favorite dishes. Supports over 5000+ recipes.</p>
@@ -43,14 +61,26 @@ const Projects = () => {
                 </div>
 
                 <div className="project">
-                    <h1 className='project-title'><span>02. </span>Whisper.tv <span className='incomplete'>(IN DEVELOPMENT)</span></h1>
+                    <h1 className='project-title'><span>03. </span>Pixelton</h1>
+                    <img src={pixelton} alt="" />
+                    <div className="info">
+                        <p>A very simple project specifically made for artists. Quickly sketch your pixel-art and export at any time!</p>
+                        <p>React</p>
+                        <div className="icons-div">
+                            <a href="https://github.com/artOwlDev/pixel-art-maker" target="_blank"><GitHub className='icon'/></a>
+                            <a href="https://www.pixelton.art" target='_blank'><Launch className='icon'/></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="project">
+                    <h1 className='project-title'><span>04. </span>Whisper.tv <span className='incomplete'>(IN DEVELOPMENT)</span></h1>
                     <img src={whisper} alt="" />
                     <div className="info">
                         <p>A social platform that lets users view and share their thoughts on Movies and TV shows.</p>
                         <p>React - Firebase - Express - TMDB API</p>
                         <div className="icons-div">
                             <a href="https://github.com/artOwlDev/Whisper.tv" target="_blank"><GitHub className='icon'/></a>
-                            <a target='_blank'><Launch className='icon'/></a>
                         </div>
                     </div>
                 </div>
@@ -62,6 +92,7 @@ const Projects = () => {
                     <div className="more-div">
                         <Add className='icon'/>
                         <p>More to come...</p>
+                        
                     </div>
 
                 </div>

@@ -1,12 +1,26 @@
 
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './name.scss'
 
 import TypeWriterEffect from 'react-typewriter-effect';
+import { ArrowDropDownCircle } from '@mui/icons-material';
 
 
 const Name = () => {
+
+    const [showArrow, setShowArrow] = useState(false);
+
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                setShowArrow(false);
+            } else {
+                setShowArrow(true);
+            }
+        });
+    }, []);
+
     return (
         <div className='name'>
             <div className="text">
@@ -16,6 +30,13 @@ const Name = () => {
                     <h1><TypeWriterEffect text="Artun Selcuk" cursorColor='white' hideCursorAfterText='true' startDelay={2000} textStyle={{color: 'white', fontSize: '4.5rem', fontFamily: 'Poppins', margin: '2rem 0'}}/></h1>
 
                     <p>I'm a third year computer science student currently studying in Canada. I aim to deepen my understanding in full-stack web development.</p>
+
+                    {showArrow && 
+                        <div className="arrow">
+                            <ArrowDropDownCircle className='icon'/>
+                        </div>
+                    }
+                    
 
                 </div>
                 

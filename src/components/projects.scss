@@ -81,7 +81,10 @@
 
                 p{
                     width: 90%;
-                    color: whitesmoke;;
+                    color: whitesmoke;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 0.8rem;
+
                 }
 
                 .icons-div{
@@ -142,6 +145,8 @@
     }
 
 }
+
+
 
 @media screen and (max-width: 800px){
     .projects{
