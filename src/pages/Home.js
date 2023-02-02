@@ -8,20 +8,23 @@ import Sidebar from '../components/Sidebar'
 import AboutMe from '../components/AboutMe'
 import Footer from '../components/Footer'
 import nyc3 from "../img/nyc3.jpg"
-
+import projects from "../img/projects.jpg"
 import "./home.scss"
 
 const Home = () => {
     return (
         <div style={{backgroundColor: '#121212', minHeight: '100vh', overflowX: 'auto'}}>
             <div className='background-con'>
-                <img className='nyc-image' src={nyc3} alt="" />
+                <img src={nyc3} className="nyc-image" alt="" />
                 <Navbar/>
                 <Sidebar/>
                 <Name/>
             </div>
             <AboutMe/>
-            <Projects id="projects-link"/>
+
+            <div className="projects-div">
+                <Projects id="projects-link"/>
+            </div>
             <ButtonToTop/>
             <Footer/>
         </div>
