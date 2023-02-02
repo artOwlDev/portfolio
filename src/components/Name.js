@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react'
 import './name.scss'
+import nyc from "../img/nyc.jpg"
 
 import TypeWriterEffect from 'react-typewriter-effect';
 import { ArrowDropDownCircle } from '@mui/icons-material';
@@ -23,6 +24,7 @@ const Name = () => {
 
     return (
         <div className='name'>
+
             <div className="text">
 
                 <div className="text-comp">

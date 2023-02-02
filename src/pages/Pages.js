@@ -7,7 +7,7 @@ import Home from './Home'
 const Pages = () => {
     return (
         <Router>
-            <div className='pages'>
+            <div className='pages' style={{overflow: 'hidden'}}>
                 <Routes>
                     <Route path="/" element={<Home/>}/>
                 </Routes>
