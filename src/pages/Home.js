@@ -12,6 +12,11 @@ import projects from "../img/projects.jpg"
 import "./home.scss"
 
 const Home = () => {
+
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+      }
+
     return (
         <div style={{backgroundColor: '#121212', minHeight: '100vh', overflowX: 'auto'}}>
             <div className='background-con'>

@@ -74,10 +74,10 @@ const Projects = () => {
                 </div>
 
                 <div className="project">
-                    <h1 className='project-title'><span>04. </span>Whisper.tv <span className='incomplete'>(IN DEVELOPMENT)</span></h1>
+                    <h1 className='project-title'><span>04. </span>Whisperr <span className='incomplete'>(IN DEVELOPMENT)</span></h1>
                     <img src={whisper} alt="" />
                     <div className="info">
-                        <p>A social platform that lets users view and share their thoughts on Movies and TV shows.</p>
+                        <p>A social platform that lets users review, rate and share their opinions on their favorite TV series.</p>
                         <p>React - Firebase - Express - TMDB API</p>
                         <div className="icons-div">
                             <a href="https://github.com/artOwlDev/Whisper.tv" target="_blank"><GitHub className='icon'/></a>
