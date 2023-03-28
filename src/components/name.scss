@@ -3,18 +3,12 @@
 
 .name{
     display: flex;
-    width: 70%;
-    margin: 10rem auto;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: space-between;
     animation: aboutAnims 3s;
-
-    img{
-        position: absolute;
-        height: 100vh;
-        object-fit: cover;
-        z-index: -1;
-    }
+    height: 100vh;
+    margin-left: 20rem;
+    padding-bottom: 15rem;
 
     .text{
         width: 60%;

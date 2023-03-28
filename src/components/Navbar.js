@@ -20,8 +20,8 @@ const Navbar = () => {
 
             <div className="right">
                 <div className="links">
-                    <span onClick={() => scrollUp(850)} className="about">About</span>
-                    <span onClick={() => scrollUp(1660)} className="projects-nav">Projects</span>
+                    <span onClick={() => scrollUp(1000)} className="about">About</span>
+                    <span onClick={() => scrollUp(1800)} className="projects-nav">Projects</span>
                 </div>
             </div>
             
